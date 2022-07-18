@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*  seletores pesonalizados
+            : pseudo-class
+            :: pseudo-element
+            > children 
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        
+
+        a:visited {
+            color: rgb(138, 0, 0);
+
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content:' <--';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank">Repositorio Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal Curso em Video</a></li>
+        <li><a href="https://www.vivadecora.com.br/revista/tipos-de-flores/" target="_blank">Flô</a></li>
+    </ul>
+</body>
+</html>
