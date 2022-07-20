@@ -7,14 +7,22 @@
     <title>Astronauta</title>
     <style>
         body {
-            background-image: url(imagens/espaco.jpg);
-            background-repeat: no-repeat;
-            background-position: top center;
-            background-size: cover;
+            background: skyblue url(imagens/espaco.jpg) top center no-repeat fixed;
+            background-size: cover; 
+        }
+
+        #astronauta {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
+    
+        <img src="imagens/astronauta.png" id="astronauta" alt="astronauta">
     
 </body>
 </html>
